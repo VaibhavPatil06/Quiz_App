@@ -1,0 +1,101 @@
+/* Login.css */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-popup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-popup-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.login-popup-title p {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.login-popup-input {
+  margin-bottom: 20px;
+}
+
+.login-popup-input input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-popup-input input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login-popup-condition p {
+  margin: 0;
+  color: #888;
+}
+
+.login-popup-condition p span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.login-popup-condition p span:hover {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.login-popup button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-popup button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-popup button[type="submit"]:focus {
+  outline: none;
+}
+
+.login-popup button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.login-popup p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.login-popup p span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.login-popup p span:hover {
+  text-decoration: underline;
+}

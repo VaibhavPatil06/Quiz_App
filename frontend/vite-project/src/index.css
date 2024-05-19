@@ -1,0 +1,170 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  .navbar-links button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Home.css */
+  .home-container {
+    padding: 20px;
+  }
+  
+  /* Quiz.css */
+  .quiz-container {
+    padding: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question h3 {
+    margin-bottom: 10px;
+  }
+  
+  .question ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .question li {
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+  }
+  
+  .result-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .reset-button,
+  .restart-button {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  
+  .reset-button:hover,
+  .restart-button:hover {
+    background-color: #c82333;
+  }
+  
+  .restart-button {
+    margin-right: 10px;
+  }
+  
+  /* Login.css */
+  .login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-popup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-popup-title h2 {
+    margin: 0;
+  }
+  
+  .login-popup-input input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .login-popup-condition {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .login-popup-condition input[type="checkbox"] {
+    margin-top: -12px;
+    margin-left: 20px;
+  }
+  
+  
+  .login-popup-condition a {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .login-popup-condition a:hover {
+    text-decoration: underline;
+  }
+  .show-leaderboard {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-leaderboard:hover {
+    background-color: #45a049;
+  }
+  
