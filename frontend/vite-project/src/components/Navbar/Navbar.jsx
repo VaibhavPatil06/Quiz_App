@@ -5,7 +5,7 @@ const Navbar = ({ setShowLogin, login, setLogin, setToken }) => {
     <nav className="navbar">
       <div className="navbar-logo">Quiz App</div>
       <div className="navbar-links">
-        {login === undefined ? (
+        {login ? (
           <button
             onClick={() => {
               setShowLogin(false);
