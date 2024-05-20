@@ -8,7 +8,7 @@ export const StoreContextProvider = ({ children }) => {
   const [token, setToken] = useState("");
 
   const url = "https://quiz-app-5ksy.onrender.com"
-  console.log(urlbase);
+
   console.log(url);
   const [topics, setTopics] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
