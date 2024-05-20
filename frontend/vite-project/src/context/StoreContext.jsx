@@ -7,12 +7,20 @@ export const StoreContext = createContext(null);
 export const StoreContextProvider = ({ children }) => {
   const [token, setToken] = useState("");
 
-  const url = "https://quiz-app-5ksy.onrender.com"
-
+  const urlbase = import.meta.env;
+  const url = urlbase.VITE_REACT_APP_URL;
+  console.log(urlbase);
   console.log(url);
   const [topics, setTopics] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [selectedTopicTitle, setSelectedTopicTitle] = useState(null);
+
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token");
+    if (storedToken) {
+      setToken(storedToken);
+    }
+  }, []);
 
   useEffect(() => {
     const fetchTopics = async () => {
