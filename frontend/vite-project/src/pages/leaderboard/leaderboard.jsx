@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./leaderboard.css";
+import { StoreContext } from "../../context/StoreContext.jsx";
 
 const Leaderboard = ({ ShowLeaderboard }) => {
   const { url } = useContext(StoreContext);
