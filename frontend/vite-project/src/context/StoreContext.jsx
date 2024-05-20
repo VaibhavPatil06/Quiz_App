@@ -7,8 +7,7 @@ export const StoreContext = createContext(null);
 export const StoreContextProvider = ({ children }) => {
   const [token, setToken] = useState("");
 
-  const urlbase = import.meta.env;
-  const url = urlbase.VITE_REACT_APP_URL;
+  const url = "https://quiz-app-5ksy.onrender.com"
   console.log(urlbase);
   console.log(url);
   const [topics, setTopics] = useState([]);
