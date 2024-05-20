@@ -26,6 +26,7 @@ export const StoreContextProvider = ({ children }) => {
     const fetchTopics = async () => {
       try {
         const response = await axios.post(url + "/api/quiz/title");
+        console.log(url);
         setTopics(response.data);
       } catch (error) {
         console.error("Failed to fetch topics:", error);
